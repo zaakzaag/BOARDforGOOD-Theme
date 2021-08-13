@@ -1,0 +1,28 @@
+.navbar-custom {
+	background-color: $yellowBFG;
+	padding: 35px;
+}
+
+.flex-basis {
+	flex-basis: 0%;
+}
+
+.navbar-container-custom {
+	min-height: 60px;
+
+	.custom-nav-link {
+		font-size: 20px;
+		line-height: 30px;
+		padding-bottom: 0px;
+		padding-top: 0px;
+		color: $black;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+.navbar-expand-md .navbar-nav .nav-link {
+	padding-left: 10px;
+	padding-right: 10px;
+}

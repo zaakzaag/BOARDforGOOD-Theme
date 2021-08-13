@@ -1,0 +1,13 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+@import "assets/custom-fonts.scss";
+
+@import "templates/main-page-temp.scss";
+
+@import "sections/navbar.scss";
+@import "sections/top-section.scss";
+@import "sections/bewerben-section.scss";
+@import "sections/uberuns-section.scss";
+
+body {
+	font-family: "Noi Grotesk Regular";
+}

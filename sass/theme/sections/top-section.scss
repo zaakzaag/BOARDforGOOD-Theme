@@ -1,0 +1,23 @@
+.top-section {
+	background-color: $yellowBFG;
+
+	color: $black;
+	h1 {
+		font-family: "StudioFeixenSerif Medium";
+		font-weight: 500;
+		line-height: 120%;
+		font-size: 56px;
+	}
+
+	.gradient {
+		background: linear-gradient(180deg, #e7f0ff 24.05%, #f8e7ef 100%);
+	}
+	.hero-img {
+		height: 600px;
+		transform: translateY(-50%);
+	}
+
+	.header {
+		min-height: 650px;
+	}
+}

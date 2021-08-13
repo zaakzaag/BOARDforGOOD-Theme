@@ -1,0 +1,80 @@
+.bewerben-section {
+	background-color: $grey;
+	padding-bottom: 100px;
+	h2,
+	h3 {
+		font-family: "StudioFeixenSerif Medium";
+	}
+
+	h2 {
+		margin-top: 70px;
+		margin-bottom: 40px;
+		font-size: 56px;
+		font-weight: 400;
+	}
+	h3 {
+		margin-top: 30px;
+		font-size: 32px;
+		margin-bottom: 30px;
+	}
+	p {
+		margin-bottom: 30px;
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
+
+.jetzt-bewerben-section {
+	background-color: $yellowBFG;
+
+	h2 {
+		font-family: "StudioFeixenSerif Medium";
+		margin-top: 70px;
+		margin-bottom: 40px;
+		font-size: 56px;
+		font-weight: 400;
+	}
+
+	h3 {
+		font-family: "StudioFeixenSerif Medium";
+		font-size: 32px;
+	}
+	.numeration {
+		font-family: "StudioFeixenSerif Medium";
+		font-size: 32px;
+		font-weight: 400;
+		height: 48px;
+		width: 48px;
+		background-position: left;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-image: url("../img/circle-small.svg");
+	}
+
+	.description {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.btn-bewerben {
+		font-size: 20px;
+		padding: 0px 20px;
+		height: 50px;
+		background-color: $rosa;
+		border: $rosa solid 1px;
+		border-radius: 50px;
+		position: relative;
+		&:hover {
+			background-color: transparent;
+		}
+		&:focus {
+			box-shadow: none;
+		}
+
+		&::before {
+			position: absolute;
+			left: -50%;
+			top: -90%;
+			content: url("../img/arrow.svg");
+		}
+	}
+}
