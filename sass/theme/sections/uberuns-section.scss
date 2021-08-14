@@ -7,14 +7,30 @@
 		margin-bottom: 40px;
 		font-size: 56px;
 		font-weight: 400;
+
+		@media (max-width: 768px) {
+			font-size: 32px;
+		}
 	}
 
 	h3 {
 		font-family: "StudioFeixenSerif Medium";
 		font-size: 32px;
+		padding-bottom: 10px;
+		@media (max-width: 768px) {
+			font-size: 26px;
+		}
+	}
+	p {
+		font-size: 20px;
+		@media (max-width: 768px) {
+			font-size: 15px;
+		}
 	}
 
-	.col_person_photo {
+	.person-img {
+		min-height: 75px;
+		min-width: 75px;
 		img {
 			height: 75px;
 			width: 75px;
@@ -22,9 +38,13 @@
 		}
 	}
 	.person-details {
+		padding-left: 20px;
 		font-size: 20px;
 		line-height: 30px;
-
+		@media (max-width: 768px) {
+			font-size: 15px;
+			line-height: 25px;
+		}
 		.name-role {
 			font-weight: 600;
 		}

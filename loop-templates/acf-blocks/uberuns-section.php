@@ -16,7 +16,7 @@ $phone_number = get_field('phone_number');
 
         <div class="row d-flex align-items-start justify-content-center ">
 
-            <div class="col-lg-8 d-flex section-title">
+            <div class="col-lg-7 col-sm-8 col-10 d-flex section-title">
             <h2>Über uns</h2>
 
 
@@ -27,7 +27,7 @@ $phone_number = get_field('phone_number');
 
         <div class="row d-flex align-items-start justify-content-center ">
 
-            <div class="col-lg-8 page-title d-flex section-title d-flex flex-column subtitle pb-5">
+            <div class="col-lg-7 col-sm-8 col-10 page-title d-flex section-title d-flex flex-column subtitle pb-5">
                 <h3>Engagiert für junge Köpfe und frische Ideen</h3>
 
                 <p>Die Board For Good Foundation wurde im Juni 2021 von Beate Eckhardt und Prof. Dr. Georg von Schnurbein gegründet. Die gemeinnützige und steuerbefreite Board For Good Foundation ist als unselbständige Stiftung unter dem Dach der Fondation des Fondateurs organisiert. 
@@ -38,10 +38,17 @@ $phone_number = get_field('phone_number');
 
             </div>
         </div>
+
         <div class="row d-flex align-items-start justify-content-center ">
 
-            <div class="col-lg-8 page-title d-flex section-title d-flex flex-column pb-5">
-                <h3>Beirat</h3>
+            <div class="col-lg-7 col-sm-8 col-10 d-flex section-title">
+            <h3>Beirat</h3>
+
+
+
+            </div>
+
+        </div>
 
                 <?php if( have_rows('advisory_board') ): ?>
                     <?php while( have_rows('advisory_board') ): the_row(); 
@@ -52,26 +59,26 @@ $phone_number = get_field('phone_number');
                                     $photo_url = $img['url'];
 
                                     ?>
-                        <div class="row d-flex align-items-center pt-4  pb-4">
+                        <div class="row d-flex align-items-center justify-content-center  pt-4  pb-4">
 
-                            <div class="col-2  col_person_photo  ">
-                                <img src="<?php echo $photo_url?>" alt="Person">
-                            </div>
+                            <div class="col-lg-7 col-sm-8 col-10 d-flex section-title">
+                               <div class="person d-flex align-items-center">
+                                    <div class="person-img d-flex">
+                                        <img src="<?php echo $photo_url?>" alt="Person">
+                                    </div>
+                                    <div class="person-details d-flex flex-column">
+                                        <div class="name-role"><?php echo $name_and_role ?></div>
+                                        <div class="details"><?php echo $details ?></div>
+                                        <a href="<?php echo $linkedin_link ?>"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn </a>
+                                    </div>
 
-                            <div class="col-8 d-flex flex-column person-details">
-                                <div class="name-role"><?php echo $name_and_role ?></div>
-                                <div class="details"><?php echo $details ?></div>
-                                <a href="<?php echo $linkedin_link ?>"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn </a>
+                               </div>
                             </div>
 
                         </div>
                     <?php endwhile; ?>  
                 <?php endif; ?>
 
-
-            </div>
-
-        </div>
 
     
 </section>

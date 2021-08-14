@@ -11,16 +11,29 @@
 		margin-bottom: 40px;
 		font-size: 56px;
 		font-weight: 400;
+
+		@media (max-width: 768px) {
+			font-size: 32px;
+		}
 	}
 	h3 {
 		margin-top: 30px;
 		font-size: 32px;
 		margin-bottom: 30px;
+
+		@media (max-width: 768px) {
+			font-size: 26px;
+		}
 	}
 	p {
 		margin-bottom: 30px;
 		font-size: 20px;
 		line-height: 30px;
+
+		@media (max-width: 768px) {
+			font-size: 15px;
+			line-height: 25px;
+		}
 	}
 }
 
@@ -33,25 +46,40 @@
 		margin-bottom: 40px;
 		font-size: 56px;
 		font-weight: 400;
+
+		@media (max-width: 768px) {
+			font-size: 32px;
+		}
 	}
 
 	h3 {
 		font-family: "StudioFeixenSerif Medium";
 		font-size: 32px;
+
+		@media (max-width: 768px) {
+			font-size: 26px;
+		}
 	}
 	.numeration {
 		font-family: "StudioFeixenSerif Medium";
 		font-size: 32px;
 		font-weight: 400;
+		min-width: 48px;
+		min-height: 48px;
 		height: 48px;
 		width: 48px;
 		background-position: left;
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-image: url("../img/circle-small.svg");
+
+		@media (max-width: 768px) {
+			font-size: 26px;
+		}
 	}
 
 	.description {
+		padding-left: 20px;
 		font-size: 20px;
 		line-height: 30px;
 	}
@@ -75,6 +103,18 @@
 			left: -50%;
 			top: -90%;
 			content: url("../img/arrow.svg");
+		}
+	}
+
+	.img-col {
+		position: relative;
+		.bewerben-img {
+			max-width: 340px;
+			transform: translateY(17.2%);
+
+			@media (max-width: 768px) {
+				max-width: 250px;
+			}
 		}
 	}
 }
