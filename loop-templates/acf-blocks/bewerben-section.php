@@ -6,6 +6,7 @@ $btn_title = get_field('button_title');
 $btn_link = get_field('button_link');
 $email = get_field('email');
 $phone_number = get_field('phone_number');
+$ask_more = get_field('ask_more');
 ?>
 
 <section class="section bewerben-section" id="bewerben">
@@ -97,8 +98,8 @@ $phone_number = get_field('phone_number');
       
         <div class="row d-flex align-items-start justify-content-center pb-3">
 
-            <div class="col-sm-7  d-flex d-flex  px-0  justify-content-lg-start justify-content-center">
-            <button type="button" class="btn btn-bewerben"><?php echo $btn_title ?></button>
+            <div class="col-sm-7  d-flex d-flex    justify-content-lg-start justify-content-center">
+            <a href="<?php echo $btn_link ?>" class="btn btn-bewerben d-flex justify-content-center align-items-center"><?php echo $btn_title ?></a>
 
             </div>
          
@@ -106,10 +107,10 @@ $phone_number = get_field('phone_number');
 
         <div class="row d-flex align-items-center justify-content-center pt-5 pt-md-3 ">
 
-            <div class="col-9 col-sm-7 col-lg-3 d-flex flex-column justify-content-center px-0 more-ask">
-                <h3> Noch Fragen? </h3>
-           
-                Beate Eckhardt, Präsidentin Beirat der Board For Good Foundation, hilft dir gerne weiter:
+            <div class="col-9 col-sm-7 col-lg-3 d-flex flex-column justify-content-center  more-ask">
+         <?php echo $ask_more ?>
+            
+     
 
                 <a href="mailto:<?php echo $email ?>"><?php echo $email ?></a>
 

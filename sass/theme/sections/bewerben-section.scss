@@ -27,7 +27,6 @@
 	}
 	p {
 		margin-bottom: 30px;
-		font-size: 20px;
 		line-height: 30px;
 
 		@media (max-width: 768px) {
@@ -80,17 +79,16 @@
 
 	.description {
 		padding-left: 20px;
-		font-size: 20px;
 		line-height: 30px;
 	}
 	.btn-bewerben {
-		font-size: 20px;
 		padding: 0px 20px;
 		height: 50px;
 		background-color: $rosa;
 		border: $rosa solid 1px;
 		border-radius: 50px;
 		position: relative;
+
 		&:hover {
 			background-color: transparent;
 		}
@@ -115,6 +113,15 @@
 			@media (max-width: 768px) {
 				max-width: 250px;
 			}
+		}
+	}
+
+	.btn {
+		font-size: 20px;
+	}
+	.more-ask {
+		a {
+			color: $black;
 		}
 	}
 }

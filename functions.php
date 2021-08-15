@@ -51,7 +51,7 @@ function my_acf_init_block_types() {
     // Check function exists.
     if( function_exists('acf_register_block_type') ) {
 
-        // register a testimonial block.
+        
         acf_register_block_type(		array(
 			'name'              => 'top-section',
             'title'             => __('Top Section'),
@@ -83,6 +83,17 @@ function my_acf_init_block_types() {
             'category'          => 'formatting',
             'icon'              => 'admin-comments',
             'keywords'          => array( 'uberuns-section', 'quote' ),
+
+		));
+
+		acf_register_block_type(		array(
+			'name'              => 'partner-section',
+            'title'             => __('Partner Section'),
+            'description'       => __('Partner section block.'),
+            'render_template'   => 'loop-templates/acf-blocks/partner-section.php',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'keywords'          => array( 'partner-section', 'quote' ),
 
 		));
     }
