@@ -1,25 +1,8 @@
 .uberuns-section {
 	background-color: $grey;
 
-	h2 {
-		font-family: "StudioFeixenSerif Medium";
-		margin-top: 70px;
-		margin-bottom: 40px;
-		font-size: 56px;
-		font-weight: 400;
-
-		@media (max-width: 768px) {
-			font-size: 32px;
-		}
-	}
-
 	h3 {
-		font-family: "StudioFeixenSerif Medium";
-		font-size: 32px;
 		padding-bottom: 10px;
-		@media (max-width: 768px) {
-			font-size: 26px;
-		}
 	}
 	p {
 		@media (max-width: 768px) {
@@ -49,7 +32,7 @@
 		}
 
 		a {
-			color: $black;
+			text-decoration: none;
 		}
 	}
 }

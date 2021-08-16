@@ -18,10 +18,7 @@ $ask_more = get_field('ask_more');
         <div class="row d-flex align-items-start justify-content-center ">
 
             <div class="col-lg-7 col-sm-8 col-10  d-flex section-title">
-<h2><?php echo $headTitle ?></h2>
-
-
-
+                <h2><?php echo $headTitle ?></h2>
             </div>
 
         </div>
@@ -74,7 +71,7 @@ $ask_more = get_field('ask_more');
                                     $point_desc = get_sub_field('point_desc');
 
                                     ?>
-        <div class="row d-flex align-items-start justify-content-center pb-5">
+        <div class="row d-flex align-items-start justify-content-center pb-4">
             <div class="col-lg-7 col-sm-8 col-10 d-flex">
                <div class="steps d-flex">
                    <div class="numeration d-flex align-items-center justify-content-center">

@@ -1,20 +1,9 @@
 .bewerben-section {
 	background-color: $grey;
 	padding-bottom: 100px;
-	h2,
-	h3 {
-		font-family: "StudioFeixenSerif Medium";
-	}
 
 	h2 {
-		margin-top: 70px;
-		margin-bottom: 40px;
-		font-size: 56px;
-		font-weight: 400;
-
-		@media (max-width: 768px) {
-			font-size: 32px;
-		}
+		margin-bottom: 10px;
 	}
 	h3 {
 		margin-top: 30px;
@@ -39,26 +28,6 @@
 .jetzt-bewerben-section {
 	background-color: $yellowBFG;
 
-	h2 {
-		font-family: "StudioFeixenSerif Medium";
-		margin-top: 70px;
-		margin-bottom: 40px;
-		font-size: 56px;
-		font-weight: 400;
-
-		@media (max-width: 768px) {
-			font-size: 32px;
-		}
-	}
-
-	h3 {
-		font-family: "StudioFeixenSerif Medium";
-		font-size: 32px;
-
-		@media (max-width: 768px) {
-			font-size: 26px;
-		}
-	}
 	.numeration {
 		font-family: "StudioFeixenSerif Medium";
 		font-size: 32px;
@@ -118,10 +87,6 @@
 
 	.btn {
 		font-size: 20px;
-	}
-	.more-ask {
-		a {
-			color: $black;
-		}
+		text-decoration: none;
 	}
 }

@@ -1,6 +1,8 @@
 <?php
 
-$headTitle = get_field('title');
+$sectionTitle = get_field('section_title');
+$description= get_field('description');
+$board_title= get_field('board_title');
 $counter = 1;
 $btn_title = get_field('button_title');
 $btn_link = get_field('button_link');
@@ -8,7 +10,7 @@ $email = get_field('email');
 $phone_number = get_field('phone_number');
 ?>
 
-<section class="section uberuns-section pb-4" id="uber-uns">
+<section class="section uberuns-section pb-4" id="uberuns">
 
 
     <div class="container-fluid ">
@@ -17,7 +19,7 @@ $phone_number = get_field('phone_number');
         <div class="row d-flex align-items-start justify-content-center ">
 
             <div class="col-lg-7 col-sm-8 col-10 d-flex section-title">
-            <h2>Über uns</h2>
+            <h2><?php echo $sectionTitle ?></h2>
 
 
 
@@ -28,21 +30,14 @@ $phone_number = get_field('phone_number');
         <div class="row d-flex align-items-start justify-content-center ">
 
             <div class="col-lg-7 col-sm-8 col-10 page-title d-flex section-title d-flex flex-column subtitle pb-5">
-                <h3>Engagiert für junge Köpfe und frische Ideen</h3>
-
-                <p>Die Board For Good Foundation wurde im Juni 2021 von Beate Eckhardt und Prof. Dr. Georg von Schnurbein gegründet. Die gemeinnützige und steuerbefreite Board For Good Foundation ist als unselbständige Stiftung unter dem Dach der Fondation des Fondateurs organisiert. 
-                </p>
-                <p>Die Stipendien werden von mehreren Schweizer Förderstiftungen finanziert, das gesamte Programm von der Credit Suisse und verschiedenen Netzwerkpartnern unterstützt. Unser Gründungspartner ist SwissFoundations, der Verband der Schweizer Förderstiftungen.
-                </p>
-
-
+                <?php echo $description ?>
             </div>
         </div>
 
         <div class="row d-flex align-items-start justify-content-center ">
 
             <div class="col-lg-7 col-sm-8 col-10 d-flex section-title">
-            <h3>Beirat</h3>
+            <h3><? echo $board_title ?></h3>
 
 
 

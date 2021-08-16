@@ -96,5 +96,16 @@ function my_acf_init_block_types() {
             'keywords'          => array( 'partner-section', 'quote' ),
 
 		));
+
+        acf_register_block_type(		array(
+			'name'              => 'contact-section',
+            'title'             => __('Contact Section'),
+            'description'       => __('Contact section block.'),
+            'render_template'   => 'loop-templates/acf-blocks/contact-section.php',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'keywords'          => array( 'contact-section', 'quote' ),
+
+		));
     }
 }

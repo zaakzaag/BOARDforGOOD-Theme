@@ -8,7 +8,41 @@
 @import "sections/bewerben-section.scss";
 @import "sections/uberuns-section.scss";
 @import "sections/partner-section.scss";
+@import "sections/contact-section.scss";
+
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: "Noi Grotesk Regular";
 	font-size: 20px;
+}
+
+a {
+	color: $black;
+	text-decoration: underline;
+	transition: 0.2s;
+	&:hover {
+		color: gray;
+	}
+}
+
+h2 {
+	margin-top: 70px;
+	margin-bottom: 40px;
+	font-size: 56px;
+	font-weight: 400;
+	font-family: "StudioFeixenSerif Medium";
+	@media (max-width: 768px) {
+		font-size: 32px;
+	}
+}
+
+h3 {
+	font-family: "StudioFeixenSerif Medium";
+	font-size: 32px;
+	@media (max-width: 768px) {
+		font-size: 26px;
+	}
 }
