@@ -31,21 +31,25 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<nav id="main-nav" class="navbar navbar-expand-md navbar-light navbar-custom justify-content-center" aria-labelledby="main-nav-label">
 
-		<?php if ( 'container' === $container ) : ?>
+			<?php if ( 'container' === $container ) : ?>
 			<div class="container justify-content-between mx-2 mw-100">
-		<?php endif; ?>
+			<?php endif; ?>
 
 					<!-- Your site title as branding in the menu -->
 					<?php if ( ! has_custom_logo() ) { ?>
 
 						<?php if ( is_front_page() && is_home() ) : ?>
 
-							<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
+							<h1 class="navbar-brand mb-0">
+								<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
+							</h1>
 
 						<?php else : ?>
 
 	
-							<a class="navbar-brand w-20 m-0" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url"><img id="logo-img" src="<?php bloginfo('template_url'); ?>/img/logo.svg" /></a>
+							<a class="navbar-brand w-20 m-0" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url">
+								<img id="logo-img" src="<?php bloginfo('template_url'); ?>/img/logo.svg" />
+							</a>
 						<?php endif; ?>
 
 						<?php
@@ -56,8 +60,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<!-- end custom logo -->
 
 				<button class="navbar-toggler d-flex justify-content-center align-items-center d-md-none collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-				<img class="menu-icon " src="<?php bloginfo('template_url'); ?>/img/icon-menu.svg" />
-				<img class="x-icon " src="<?php bloginfo('template_url'); ?>/img/icon-x.svg" />
+					<img class="menu-icon " src="<?php bloginfo('template_url'); ?>/img/icon-menu.svg" />
+					<img class="x-icon " src="<?php bloginfo('template_url'); ?>/img/icon-x.svg" />
 				</button>
 
 				<!-- The WordPress Menu goes here -->
@@ -75,13 +79,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 					)
 				);
 				?>
-
-
-
-<div class="language d-flex  justify-content-end align-items-center navbar-container-custom w-20">
-	 <a href="#" class=" custom-nav-link pl-1 active-lang">D</a>
-	  <a href="#" class=" custom-nav-link pl-1">F</a> </div>
-
+				<!-- Extra items for language switcher -->
+				<div class="language d-flex  justify-content-end align-items-center navbar-container-custom w-20">
+					<a href="#" class=" custom-nav-link pl-1 active-lang">D</a>
+					<a href="#" class=" custom-nav-link pl-1">F</a> 
+				</div>
+			</div>
 		</nav><!-- .site-navigation -->
 
 	</div><!-- #wrapper-navbar end -->
