@@ -16,14 +16,14 @@ get_header();
 
 <main class="site-main hide-entry-title" id="main">
 
-<?php
-while ( have_posts() ) {
-	the_post();
-	get_template_part( 'loop-templates/content', 'page' );
+	<?php
+	while ( have_posts() ) {
+		the_post();
+		get_template_part( 'loop-templates/content', 'page' );
 
 
-}
-?>
+	}
+	?>
 
 </main><!-- #main -->
 
