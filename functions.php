@@ -109,3 +109,26 @@ function my_acf_init_block_types() {
 		));
     }
 }
+
+function wpb_custom_new_menu() {
+    register_nav_menu('my-custom-menu',__( 'My Custom Menu' ));
+}
+
+add_action( 'init', 'wpb_custom_new_menu' );
+
+function add_search_form($items, $args) {
+    if( $args->theme_location == 'my-custom-menu' ){
+    $items .= '
+
+    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-120 nav-item d-flex justify-content-end d-md-none"> 
+      
+        <a href="#" class="nav-link custom-nav-link pl-1 active-lang">D</a>
+        <a href="#" class="nav-link custom-nav-link pl-1">F</a>
+     
+    </li>
+   ';
+
+    }
+  return $items;
+}
+add_filter('wp_nav_menu_items', 'add_search_form', 10, 2);

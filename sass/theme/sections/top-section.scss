@@ -29,8 +29,17 @@
 			}
 		}
 	}
-	.gradient-part {
-		background: linear-gradient(180deg, #e7f0ff 24.05%, #f8e7ef 100%);
+
+	.circle-big {
+		right: 2vw;
+		bottom: -100px;
+		height: 170px;
+		width: 170px;
+		background-size: contain;
+		background-image: url("../img/circle-big.svg");
+		@media (max-width: 1200px) {
+			bottom: -50px;
+		}
 	}
 
 	.hero-image {
@@ -50,7 +59,9 @@
 			}
 		}
 	}
-
+	.gradient-part {
+		background: linear-gradient(180deg, #e7f0ff 24.05%, #f8e7ef 100%);
+	}
 	.description-top {
 		h3 {
 			padding-bottom: 15px;

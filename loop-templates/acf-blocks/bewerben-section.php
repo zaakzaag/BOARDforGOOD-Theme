@@ -7,9 +7,10 @@ $btn_link = get_field('button_link');
 $email = get_field('email');
 $phone_number = get_field('phone_number');
 $ask_more = get_field('ask_more');
+$subsection_title = get_field('subsection_title')
 ?>
 
-<section class="section bewerben-section" id="bewerben">
+<section class="section bewerben-section pb-5" id="bewerben">
 
 
     <div class="container-fluid ">
@@ -60,7 +61,7 @@ $ask_more = get_field('ask_more');
         <div class="row d-flex align-items-start justify-content-center ">
 
             <div class="col-lg-7 col-sm-8 col-10 d-flex">
-                <h2>Jetzt bewerben!</h2>
+                <h2><?php echo $subsection_title ?></h2>
 
             </div>
 
@@ -105,7 +106,7 @@ $ask_more = get_field('ask_more');
         <div class="row d-flex align-items-center justify-content-center pt-5 pt-md-3 ">
 
             <div class="col-9 col-sm-7 col-lg-3 d-flex flex-column justify-content-center  more-ask">
-         <?php echo $ask_more ?>
+                <?php echo $ask_more ?>
             
      
 

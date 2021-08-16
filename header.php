@@ -28,16 +28,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<!-- ******************* The Navbar Area ******************* -->
 	<div id="wrapper-navbar">
 
-		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
 		<nav id="main-nav" class="navbar navbar-expand-md navbar-light navbar-custom justify-content-center" aria-labelledby="main-nav-label">
 
-			<h2 id="main-nav-label" class="sr-only">
-				<?php esc_html_e( 'Main Navigation', 'understrap' ); ?>
-			</h2>
-
 		<?php if ( 'container' === $container ) : ?>
-			<div class="container justify-content-between mx-2">
+			<div class="container justify-content-between mx-2 mw-100">
 		<?php endif; ?>
 
 					<!-- Your site title as branding in the menu -->
@@ -60,16 +55,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 					?>
 					<!-- end custom logo -->
 
-				<button class="navbar-toggler d-flex justify-content-center align-items-center" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-				<img class="menu-icon" src="<?php bloginfo('template_url'); ?>/img/icon-menu.svg" />
-				<img class="x-icon" src="<?php bloginfo('template_url'); ?>/img/icon-x.svg" />
+				<button class="navbar-toggler d-flex justify-content-center align-items-center d-md-none collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
+				<img class="menu-icon " src="<?php bloginfo('template_url'); ?>/img/icon-menu.svg" />
+				<img class="x-icon " src="<?php bloginfo('template_url'); ?>/img/icon-x.svg" />
 				</button>
 
 				<!-- The WordPress Menu goes here -->
 				<?php
 				wp_nav_menu(
 					array(
-						'theme_location'  => 'primary',
+						'theme_location'  => 'my-custom-menu',
 						'container_class' => 'collapse navbar-collapse',
 						'container_id'    => 'navbarNavDropdown',
 						'menu_class'      => 'navbar-nav mx-md-auto',
@@ -84,7 +79,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 <div class="language d-flex  justify-content-end align-items-center navbar-container-custom w-20">
-	 <a href="#" class=" custom-nav-link pl-1">D</a>
+	 <a href="#" class=" custom-nav-link pl-1 active-lang">D</a>
 	  <a href="#" class=" custom-nav-link pl-1">F</a> </div>
 
 		</nav><!-- .site-navigation -->
