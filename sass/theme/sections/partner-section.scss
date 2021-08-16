@@ -1,27 +1,10 @@
 .partner-section {
 	background-color: $lightGrey;
-	h2 {
-		font-family: "StudioFeixenSerif Medium";
-		margin-top: 70px;
-		margin-bottom: 40px;
-		font-size: 56px;
-		font-weight: 400;
-
-		@media (max-width: 768px) {
-			font-size: 32px;
-		}
-	}
 
 	.partner {
 		a {
-			color: $black;
-			text-decoration: underline;
-			transition: 0.2s;
 			margin-right: 8px;
 			display: inline-block;
-			&:hover {
-				color: gray;
-			}
 		}
 		@media (max-width: 768px) {
 			font-size: 15px;

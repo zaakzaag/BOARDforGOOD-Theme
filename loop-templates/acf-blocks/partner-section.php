@@ -1,3 +1,6 @@
+<?php 
+$section_title = get_field('section_title')
+?>
 <section class="section partner-section pb-4" id="partner">
 
 
@@ -7,7 +10,7 @@
         <div class="row d-flex align-items-start justify-content-center ">
 
             <div class="col-lg-7 col-sm-8 col-10 d-flex section-title">
-            <h2>Partner</h2>
+            <h2><?php echo $section_title ?></h2>
             </div>
 
         </div>
