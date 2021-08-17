@@ -18,7 +18,7 @@ $phone_number = get_field('phone_number');
 
         <div class="row d-flex align-items-start justify-content-center ">
 
-            <div class="col-lg-7 col-sm-8 col-10 d-flex section-title">
+            <div class="col-lg-7 col-md-10 col-sm-11 col-12 d-flex section-title">
             <h2><?php echo $sectionTitle ?></h2>
 
 
@@ -29,14 +29,14 @@ $phone_number = get_field('phone_number');
 
         <div class="row d-flex align-items-start justify-content-center ">
 
-            <div class="col-lg-7 col-sm-8 col-10 page-title d-flex section-title d-flex flex-column subtitle pb-5">
+            <div class="col-lg-7 col-md-10 col-sm-11 col-12 page-title d-flex section-title d-flex flex-column subtitle pb-5">
                 <?php echo $description ?>
             </div>
         </div>
 
         <div class="row d-flex align-items-start justify-content-center ">
 
-            <div class="col-lg-7 col-sm-8 col-10 d-flex section-title">
+            <div class="col-lg-7 col-md-10 col-sm-11 col-12 d-flex section-title">
             <h3><? echo $board_title ?></h3>
 
 
@@ -56,7 +56,7 @@ $phone_number = get_field('phone_number');
                             ?>
                 <div class="row d-flex align-items-center justify-content-center  pt-4  pb-4">
 
-                    <div class="col-lg-7 col-sm-8 col-10 d-flex section-title">
+                    <div class="col-lg-7 col-md-10 col-sm-11 col-12 d-flex section-title">
                         <div class="person d-flex align-items-center">
                             <div class="person-img d-flex">
                                 <img src="<?php echo $photo_url?>" alt="Person">

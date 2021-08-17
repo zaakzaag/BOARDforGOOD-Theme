@@ -16,7 +16,7 @@ $subsection_title = get_field('subsection_title')
     <div class="container-fluid ">
 
         <div class="row d-flex align-items-start justify-content-center ">
-            <div class="col-lg-7 col-sm-8 col-10  d-flex section-title">
+            <div class="col-lg-7 col-md-10 col-sm-11 col-11  d-flex section-title">
                 <h2><?php echo $headTitle ?></h2>
             </div>
         </div>
@@ -29,7 +29,7 @@ $subsection_title = get_field('subsection_title')
                             ?>
                 <div class="row d-flex align-items-start justify-content-center ">
 
-                    <div class="col-lg-7 col-sm-8 col-10 page-title d-flex section-title d-flex flex-column subtitle">
+                    <div class="col-lg-7 col-md-10 col-sm-11 col-11 page-title d-flex section-title d-flex flex-column subtitle">
                         <h3><? echo $subtitle ?></h3>
                                 <? echo $subtext ?>
                     </div>
@@ -48,7 +48,7 @@ $subsection_title = get_field('subsection_title')
     <div class="container-fluid ">
 
         <div class="row d-flex align-items-start justify-content-center ">
-            <div class="col-lg-7 col-sm-8 col-10 d-flex">
+            <div class="col-lg-7 col-md-10 col-sm-11 col-11 d-flex">
                 <h2><?php echo $subsection_title ?></h2>
             </div>
         </div>
@@ -58,7 +58,7 @@ $subsection_title = get_field('subsection_title')
                             $point_desc = get_sub_field('point_desc');
                             ?>
                 <div class="row d-flex align-items-start justify-content-center pb-4">
-                    <div class="col-lg-7 col-sm-8 col-10 d-flex">
+                    <div class="col-lg-7 col-md-10 col-sm-11 col-11 d-flex">
                         <div class="steps d-flex">
                             <div class="numeration d-flex align-items-center justify-content-center">
                                     <?php echo $counter; $counter++ ?>
@@ -88,7 +88,7 @@ $subsection_title = get_field('subsection_title')
         </div>
 
         <div class="row d-flex align-items-center justify-content-center pt-5 pt-md-3 ">
-            <div class="col-9 col-sm-7 col-lg-3 d-flex flex-column justify-content-center  more-ask">
+            <div class="col-md-10 col-sm-11 col-11 col-lg-3 d-flex flex-column justify-content-center  more-ask">
                 <?php echo $ask_more ?>
                 <a href="mailto:<?php echo $email ?>"><?php echo $email ?></a>
                 <a href="tel:<?php echo $phone_number ?>"><?php echo $phone_number ?></a>

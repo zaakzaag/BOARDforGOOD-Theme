@@ -11,7 +11,7 @@ $privacy_policy = get_field('privacy_policy');
 
         <div class="row d-flex align-items-start justify-content-center ">
 
-            <div class="col-lg-7 col-sm-8 col-10 d-flex">
+            <div class="col-lg-7 col-md-10 col-sm-11 col-12 d-flex">
                 <h2><?php echo $section_title ?></h2>
             </div>
         </div>
@@ -24,7 +24,7 @@ $privacy_policy = get_field('privacy_policy');
                                     ?>
                 <div class="row d-flex align-items-start justify-content-center py-2 ">
 
-                    <div class="col-lg-7 col-sm-8 col-10 d-flex">
+                    <div class="col-lg-7 col-md-10 col-sm-11 col-12 d-flex">
                         <address>
                             <?php echo $address_data ?>
                         </address>

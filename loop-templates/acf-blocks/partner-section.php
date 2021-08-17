@@ -9,13 +9,13 @@ $section_title = get_field('section_title')
 
         <div class="row d-flex align-items-start justify-content-center ">
 
-            <div class="col-lg-7 col-sm-8 col-10 d-flex section-title">
+            <div class="col-lg-7 col-md-10 col-sm-11 col-12 d-flex section-title">
             <h2><?php echo $section_title ?></h2>
             </div>
 
         </div>
         <div class="row d-flex align-items-start justify-content-center pb-5">
-            <div class="col-lg-7 col-sm-8 col-10 section-title d-table">
+            <div class="col-lg-7 col-md-10 col-sm-11 col-12 section-title d-table">
                     <?php if( have_rows('partners') ): ?>
                         <?php while( have_rows('partners') ): the_row(); 
                                         $role_name = get_sub_field('role_name');
@@ -52,7 +52,7 @@ $section_title = get_field('section_title')
              </div>
 
             <div class="row d-flex align-items-start justify-content-center pt-5 pb-4">
-                <div class="col-lg-10 col-sm-8 col-10">
+                <div class="col-lg-10 col-md-10 col-sm-11 col-12">
                     <div class="partner-logo-wrapper">
                         <?php if( have_rows('partners') ): ?>
                             <?php while( have_rows('partners') ): the_row(); ?>
